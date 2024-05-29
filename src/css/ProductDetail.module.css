@@ -1,0 +1,38 @@
+.singleCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: flex-start;
+}
+.singleCard > img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+.productDetail {
+  display: grid;
+  gap: 1rem;
+}
+.productDetail > h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.productDetail b {
+  font-weight: bold;
+}
+.alert {
+  background-color: red;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.alert h1 {
+    
+    font-weight: bold;
+}
+
+.alert a {
+  text-decoration: underline;
+}

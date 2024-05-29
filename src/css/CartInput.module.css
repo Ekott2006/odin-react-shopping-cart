@@ -1,0 +1,29 @@
+
+.cartContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.cartContainer > input {
+    width: 40%;
+    height: fit-content;
+    padding: 3px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.cartContainer button {
+    background: blue;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.inCartButton {
+    background: green !important;
+}
+
+.cartContainer > button:hover {
+    transform: scale(1.2);
+}

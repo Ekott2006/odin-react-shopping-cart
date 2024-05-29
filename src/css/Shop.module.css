@@ -1,0 +1,70 @@
+.category {
+    display: grid;
+    gap: 1rem;
+}
+
+.category > div {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.category h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.categoryContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*flex-wrap: wrap;*/
+    gap: 2rem;
+}
+
+.cardContainer > * {
+    width: 30%;
+}
+
+
+.h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+.card {
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: grid;
+    border-radius: 10px;
+}
+
+.cardImg {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.cardLink {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cardLink:hover {
+    text-decoration: black underline;
+}
+
+.cardDetails {
+    display: grid;
+    gap: 0.5rem;
+    padding: 10px;
+}
