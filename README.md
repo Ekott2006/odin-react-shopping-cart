@@ -4,7 +4,7 @@ Project to create a Shopping Cart Website using React.
 
 From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/react-new-shopping-cart).
 
-🔗 **Live preview:** [here](https://odin-react-memory-card-eta.vercel.app/)
+🔗 **Live preview:** [here](https://odin-react-shopping-cart-lime.vercel.app/products)
 
 ## Built with
 
