@@ -8,7 +8,7 @@ export default function CartInput({id}) {
 
     const [cartItem, setCartItem] = useState({
         quantity: parseInt(cart[id] ?? 0),
-        inCart: cart[id] !== 0,
+        inCart: cart[id] === 0,
     });
 
     const toggleInCart = () => {
