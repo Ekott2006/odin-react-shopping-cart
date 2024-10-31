@@ -6,28 +6,27 @@ export default function ProductDetail() {
   const { id } = useParams();
   const { data: dataArray } = useOutletContext();
   const data = dataArray.filter((x) => x.id == id)[0];
+  if (!data) {
+    return (
+      <div className={styles.alert}>
+        <h1>Error: Invalid ID</h1>
+        <a href="/"> Go to Home </a>
+      </div>
+    );
+  }
   return (
     <>
-      {!data && (
-        <div className={styles.alert}>
-          <h1>Error: Invalid ID</h1>
-          <a href="/"> Go to Home </a>
+      <div className={styles.singleCard}>
+        <img src={data.image} alt={data.title + " Image"} />
+        <div className={styles.productDetail}>
+          <h1>{data.title}</h1>
+          <p>{data.description}</p>
+          <p>
+            <b>Price: </b>${data.price}
+          </p>
+          <CartInput id={id} />
         </div>
-      )}
-      {data && (
-        <div className={styles.singleCard}>
-          <img src={data.image} alt={data.title + " Image"} />
-          {/*<img src={Image} alt="Best Image" />*/}
-          <div className={styles.productDetail}>
-            <h1>{data.title}</h1>
-            <p>{data.description}</p>
-            <p>
-              <b>Price: </b>${data.price}
-            </p>
-            <CartInput id={id} />
-          </div>
-        </div>
-      )}
+      </div>
     </>
   );
 }

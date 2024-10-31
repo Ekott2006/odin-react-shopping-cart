@@ -1,7 +1,7 @@
 .singleCard {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: auto minmax(200px, 1fr);
+  gap: 1.5rem;
   align-items: flex-start;
 }
 .singleCard > img {
@@ -11,7 +11,7 @@
 }
 .productDetail {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 .productDetail > h1 {
   font-size: 2rem;
@@ -29,8 +29,7 @@
   font-size: 1.5rem;
 }
 .alert h1 {
-    
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .alert a {

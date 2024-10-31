@@ -5,10 +5,11 @@ import {useOutletContext} from "react-router-dom";
 
 export default function CartInput({id}) {
     const {cart, setCart} = useOutletContext();
+    
 
     const [cartItem, setCartItem] = useState({
         quantity: parseInt(cart[id] ?? 0),
-        inCart: cart[id] === 0,
+        inCart: cart[id] >= 1,
     });
 
     const toggleInCart = () => {
@@ -18,6 +19,7 @@ export default function CartInput({id}) {
     const handleQuantityChange = (event) => {
         const quantity = parseInt(event.target.value);
         setCartItem((prev) => ({...prev, quantity}));
+        
         if (!cartItem.inCart && quantity > 0) {
             toggleInCart();
         }

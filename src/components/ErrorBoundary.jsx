@@ -12,7 +12,7 @@ export default function ErrorBoundary() {
     >
       <div>
         <h1>{error.message ?? error.data}</h1>
-        <a href="/public">Link to Home</a>
+        <a href="/">Link to Home</a>
       </div>
     </div>
   );

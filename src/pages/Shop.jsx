@@ -3,7 +3,7 @@ import {Link, useOutletContext} from "react-router-dom";
 import CartInput from "../components/CartInput.jsx";
 
 export default function Shop() {
-    const {data} = useOutletContext()
+    const {data} = useOutletContext()    
 
     return (
         <div>
@@ -18,7 +18,7 @@ export default function Shop() {
                                 {x.title}
                             </Link>
                             <p>${x.price}</p>
-                            {data && <CartInput id={x.id}/>}
+                            <CartInput id={x.id}/>
                         </div>
                     </li>))}
             </ul>
